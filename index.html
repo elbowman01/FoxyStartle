@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bear and Fox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1) Storybook -->
+  <div id="storybook-container">
+    <img id="storybook-image" src="storybook.jpg" alt="Storybook Opening">
+  </div>
+
+  <!-- 2) Video (native controls only) -->
+  <div id="video-container">
+    <video
+      id="intro-video"
+      controls
+      playsinline
+      width="80%"
+      style="max-width:800px;"
+    >
+      <source src="animation.mp4" type="video/mp4">
+      Your browser doesn’t support the video tag.
+    </video>
+  </div>
+
+  <!-- 3) Game -->
+  <div id="sketch-container"></div>
+
+  <!-- 4) Continue link -->
+  <div id="continue-section">
+    <a id="continue-link" href="https://jcdrawstrash.github.io/RUN-AWAY/" target="_blank">
+      Go to My Other Site
+    </a>
+  </div>
+
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
